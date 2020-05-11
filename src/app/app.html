@@ -1,0 +1,35 @@
+<ion-menu [content]="content">
+
+  <ion-content padding>
+    <ion-col>
+      <h4 style="line-height: 28px">
+        <span style="font-size: 20px; font-weight: 900; float: right; margin-right: 40px;">Jon Woon</span> <br>
+        <span style="font-size: 15px; font-weight: 600; float: right; margin-right: 40px;">heyjon@yoozlr.com</span> <br>
+        <span style="font-size: 15px; font-weight: 500; float: right; margin-right: 40px;">Free trial</span></h4>
+    </ion-col>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h2 style="font-weight: 800;margin-right: 40px; margin-top: 35%; float: right;" (click)="DuedateModalPage()">Upgrade</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h2 style="font-weight: 800;margin-right: 40px; float: right;">Help</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <h2 style="font-weight: 800; margin-right: 40px; float: right;">Log Out</h2>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

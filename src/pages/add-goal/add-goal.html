@@ -1,0 +1,86 @@
+<ion-content no-padding>
+<ion-col>
+  <div class="black-bg">
+    <img src="../assets/imgs/Lifespan.@2x.png">
+  </div>
+</ion-col>
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-12><h3>Before I die, I want to…</h3></ion-col>
+    <ion-col col-12><h5>No edits after committing. Take time to think it through.</h5></ion-col>
+    <ion-col col-12><h4 class="botomUnderLineBlack"></h4></ion-col>
+  </ion-row>
+</ion-grid>
+<br>
+
+
+<ion-col no-padding>
+  <input type="text" name="Email" placeholder="Type goal here (“Learn to play piano”)">
+</ion-col>
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-12><button ion-button full round class="SignInButton" (click)="MainMilestones()">Commit to this life goal</button></ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-12><h5>Someone recently added: “Climb Mount Everest!”</h5></ion-col>
+  </ion-row>
+</ion-grid>
+
+<ion-grid style="margin-top: 40px;">
+  <ion-row>
+    <ion-col col-12><h3>Break that down into 3 milestones.</h3></ion-col>
+    <ion-col col-12><h5>We’ll hold you accountable for your goals.</h5></ion-col>
+    <ion-col col-12><h4 class="botomUnderLineBlack"></h4></ion-col>
+  </ion-row>
+</ion-grid>
+  <br>
+
+
+
+<ion-col no-padding>
+  <input type="text" name="Email" placeholder="Type milestone 1 here (“Save up and buy used piano”)">
+
+  <ion-col>
+    <div class="timePeriod">
+      <span class="timePeriod_Text">I will crush this by: </span>&nbsp;&nbsp;
+      <span class="timePerion_Text_Date" (click)="AddMilestonesModalPage()">Add due date</span>
+    </div>
+  </ion-col>
+</ion-col>
+
+
+<ion-col no-padding>
+  <input type="text" name="Email" placeholder="Type milestone 2 here (“Find piano tutor and buy books”)">
+
+  <ion-col>
+    <div class="timePeriod">
+      <span class="timePeriod_Text">I will crush this by: </span>&nbsp;&nbsp;
+      <span class="timePerion_Text_Date">Dec 2, 2017</span>
+    </div>
+  </ion-col>
+</ion-col>
+
+
+<ion-col no-padding>
+  <input type="text" name="Email" placeholder="Type milestone 3 here (“Learn piano!!”)">
+
+  <ion-col>
+    <div class="timePeriod">
+      <span class="timePeriod_Text">I will crush this by: </span>&nbsp;&nbsp;
+      <span class="timePerion_Text_Date" (click)="AddMilestonesModalPage()">Add due date</span>
+    </div>
+  </ion-col>
+</ion-col>
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-12><button ion-button full round class="SignInButton" (click)="AddedPage()">Commit to these milestones</button></ion-col>
+  </ion-row>
+</ion-grid>
+<br>
+</ion-content>

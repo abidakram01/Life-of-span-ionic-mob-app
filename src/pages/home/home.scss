@@ -1,0 +1,68 @@
+page-home {
+  background-color: #fff;
+
+  .black-bg{
+    background-color: #2F2F2F;
+    height: 195px;
+    width: 100%;
+    margin-top: -17px;
+    text-align: center;
+  }
+  .black-bg img{
+    margin-top: 25px;
+  }
+  h4{
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .botomUnderLine{
+    border-bottom: 5px solid #fff;
+    width: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  input{
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100%;
+    padding: 20px 20px;
+    border: 0px solid #BEBEBE;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #F3F3F3;
+
+  }
+  .signIn{
+    margin-top: -15px;
+  }
+  .SignInButton{
+    background-image: linear-gradient(to right, #BCF887 10%, #50FF93 100%);
+    color: #2F2F2F;
+    font-weight: 900;
+    padding: 28px 46px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 0px 2px 15px -4px;
+    text-transform: inherit;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .SignInButton:hover {
+    background-position: right center;
+  }
+  h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  a{
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+}

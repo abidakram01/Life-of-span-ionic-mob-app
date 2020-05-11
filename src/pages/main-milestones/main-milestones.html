@@ -1,0 +1,184 @@
+<ion-content no-padding>
+  <div class="black-bg">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3><img menuToggle src="../assets/imgs/Group1.png"></ion-col>
+        <ion-col col-9><img style="margin-left: 10px;" src="../assets/imgs/Lifespan.@2x.png" width="60%"></ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <div class="firstRange">
+            <ion-col style="margin-left: 10px">
+              <span>
+                <span style="font-weight: 800">Today :</span>
+                <span>3% left</span>
+              </span>
+            </ion-col>
+
+            <ion-col style="margin-left: 125px;">
+              <span>0h 0m 32s left</span>
+            </ion-col>
+          </div>
+          <ion-range [(ngModel)]="singleValue" pin="true" color="danger"></ion-range>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <div class="firstRange">
+            <ion-col style="margin-left: 10px">
+              <span>
+                <span style="font-weight: 800">This month: </span>
+                <span>33% left</span>
+              </span>
+            </ion-col>
+
+            <ion-col style="margin-left: 85px;">
+              <span>0h 0m 32s left</span>
+            </ion-col>
+          </div>
+          <ion-range [(ngModel)]="singleValue" color="primary" pin="true"></ion-range>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <div class="firstRange">
+             <ion-col style="margin-left: 10px">
+              <span>
+                <span style="font-weight: 800">Lifespan:</span>
+                <span> 88% left </span>
+              </span>
+            </ion-col>
+
+            <ion-col style="margin-left: 95px;">
+              <span>18,281 days left</span>
+            </ion-col>
+          </div>
+          <ion-range [(ngModel)]="singleValue" color="secondary" pin="true"></ion-range>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <ion-segment [(ngModel)]="milestones">
+    <ion-segment-button color="dark" value="milestonesData">
+      Milestones
+    </ion-segment-button>
+    <ion-segment-button value="goalsData">
+      Goals
+    </ion-segment-button>
+  </ion-segment>
+
+
+<div [ngSwitch]="milestones">
+  <ion-list *ngSwitchCase="'goalsData'">
+
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="inProgress">
+      In progress (34)
+    </ion-segment-button>
+    <ion-segment-button value="Crushed">
+      Crushed (3)
+    </ion-segment-button>
+  </ion-segment>
+
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'Crushed'">
+    <ion-card no-padding>
+      <ion-card-header>
+        <h4 class="TextProgress">Buy Mac for Evelyn my wife!</h4>
+      </ion-card-header>
+      <ion-card-content>
+        <h5 class="hiringText"><strong>20 days ago:</strong> Hire agency to do preliminary search</h5>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <h5 class="hiringText"><strong>12 days ago:</strong> Hire agency to do preliminary search</h5>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <h5 class="hiringText"><strong>3 days ago:</strong> Hire agency to do preliminary search</h5>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-card-content>
+    </ion-card>
+
+
+  </ion-list>
+
+
+
+  <ion-list *ngSwitchCase="'inProgress'">
+    <ion-card no-padding>
+      <ion-card-header>
+        <h4 class="TextProgress">Find my biological dad in Japan, tell him I don’t blame him.</h4>
+      </ion-card-header>
+      <ion-card-content>
+        <h5 class="hiringText"><strong>20 days ago:</strong> Hire agency to do preliminary search</h5>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <h5 class="hiringText"><strong>12 days ago:</strong> Hire agency to do preliminary search</h5>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-card-content>
+      <ion-card-content>
+        <h5 class="hiringText"><strong>3 days ago:</strong> Hire agency to do preliminary search</h5>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</div>
+
+  </ion-list>
+
+  <ion-list no-padding *ngSwitchCase="'milestonesData'">
+    <ion-item>
+      <h5><strong>in 5 days:</strong> Apply and get accepted into Johns Hopkins University for biomed.</h5>
+    </ion-item>
+     <ion-item>
+      <h5><strong>in 10 days:</strong>  Book tickets for world tour!</h5>
+    </ion-item>
+     <ion-item>
+      <h5><strong>in 58 days:</strong> Learn up about hiking and overall health preperations for Mount Everest expidition.</h5>
+    </ion-item>
+     <ion-item>
+      <h5><strong>in 70 days:</strong> Grow my networth by 10%!</h5>
+    </ion-item>
+     <ion-item>
+      <h5><strong>in 70 days:</strong> Grow my networth by 10%!</h5>
+    </ion-item>
+     <ion-item>
+      <h5><strong>in 70 days:</strong> Grow my networth by 10%!</h5>
+    </ion-item>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12><button style="position: fixed;bottom: 15px;" ion-button full round class="SignInButton" (click)="MilesonesCheckinPage()">+ Add new life goal</button></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  </ion-list>
+</div>
+
+
+
+
+</ion-content>
+
+
+
+
+

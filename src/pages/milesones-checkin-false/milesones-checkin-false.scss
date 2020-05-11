@@ -1,0 +1,32 @@
+page-milesones-checkin-false {
+  h3{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+  h5{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 11px;
+    font-weight:600;
+  }
+
+  .SignInButton{
+    background-image: linear-gradient(to right, #BCF887 10%, #50FF93 100%);
+    color: #000;
+    font-weight: 900;
+    padding: 28px 46px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+
+  }
+  .SignInButton:hover {
+    background-position: right center;
+  }
+  .topImg_added{
+    text-align: center;
+  }
+}

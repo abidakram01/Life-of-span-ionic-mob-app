@@ -1,0 +1,7 @@
+{
+  "name": "LifeSpan",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
